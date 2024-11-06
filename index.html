@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
+    <!-- HEADER -->
     <header class="header">
         <div class="container">
             <nav class="navbar">
@@ -17,9 +18,6 @@
                 </div>
 
                 <ul class="navbar__list">
-                    <li class="navbar__item">
-                        <a href="index.html" class="navbar__link">Home</a>
-                    </li>
                     <li class="navbar__item">
                         <a href="app.html" class="navbar__link">Introduction</a>
                     </li>
@@ -32,15 +30,6 @@
                     <li class="navbar__item">
                         <a href="app4.html" class="navbar__link">While</a>
                     </li>
-                    <li class="navbar__item">
-                        <a href="app5.html" class="navbar__link">Do-while</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="app6.html" class="navbar__link">Benefits</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="app7.html" class="navbar__link">Problems</a>
-                    </li>
                 </ul>
                 <div class="navbar__burger">
                     <i class="fa-solid fa-bars"></i>
@@ -49,16 +38,148 @@
         </div>
 
     </header>
+    <!-- HERO -->
+    <section class="hero">
+       <div class="hero__bg">
+        <div class="container">
+            <div class="hero__content">
+                <h2 class="hero__title">
+                    Introduction to Loop Algorithms in JavaScript
+                </h2>
+                <p class="hero__subtitle">
+                    Discover the power of loop algorithms in JavaScript. Unleash efficiency in your code.
+                </p>
+                <div class="hero__actions">
+                    <a href="#" class="hero__btn">Start Learning</a>
+                    <a href="#" class="hero__btn">Explore Examples</a>
+                </div>
+            </div>
+        </div>
+       </div>
+    </section>
+    <!-- INTRODUCTION -->
+     <section class="introduction">
+       <div class="introduction__bg">
+        <div class="container">
+            <h2 class="introduction__title">
+                What are Loop Algorithms?
+            </h2>
+            <div class="introduction__list">
+                <div class="introduction__item">
+                    <h3 class="introduction__subtitle">
+                        Definition
+                    </h3>
+                    <p class="introduction__text">
+                        Loop algorithms are programming constructs that repeat a set of instructions until a condition is met.
+                    </p>
+                </div>
+                <div class="introduction__item">
+                    <h3 class="introduction__subtitle">
+                        Purpose
+                    </h3>
+                    <p class="introduction__text">
+                        They automate repetitive tasks, making code more efficient and reducing manual effort.
+                    </p>
+                </div>
+                <div class="introduction__item">
+                    <h3 class="introduction__subtitle">
+                        Versatility
+                    </h3>
+                    <p class="introduction__text">
+                        Loop algorithms can iterate through arrays, perform calculations, and control program flow.
+                    </p>
+                </div>
+            </div>
+       </div>
+        </div>
 
-
-
-
-
-
-
-
-
-
+     </section>
+     <!-- BASICS -->
+      <section class="basics">
+        <div class="container">
+           <div class="basics__content">
+            <h2 class="basics__title">
+                Common Loop Algorithms (with visuals)
+            </h2>
+            <div class="basics__list">
+                <div class="basics__item">
+                    <img src="./assets/for.svg" alt="">
+                    <h3>For Loop</h3>
+                    <p>Executes code a specific number of times.</p>
+                </div>
+                <div class="basics__item">
+                    <img src="./assets/while.svg" alt="">
+                    <h3>While Loop</h3>
+                    <p>Runs code as long as a condition is true.</p>
+                </div>
+                <div class="basics__item">
+                    <img src="./assets/do-while.svg" alt="">
+                    <h3>Do-While Loop</h3>
+                    <p>Executes code once before checking the condition.</p>
+                </div>
+            </div>
+           </div>
+           <div class="basics__image">
+            <img src="./assets/basics.png" alt="">
+           </div>
+        </div>
+      </section>
+      <!-- FOR -->
+       <section class="for">
+        <div class="container">
+            <h1>For Loop</h1>
+            <div class="step">
+              <div class="number">1</div>
+              <div class="description">
+                <h2>Initialization</h2>
+                <p>Set the loop counter to an initial value.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="number">2</div>
+              <div class="description">
+                <h2>Condition</h2>
+                <p>Specify when the loop should continue running.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="number">3</div>
+              <div class="description">
+                <h2>Update</h2>
+                <p>Modify the counter after each iteration.</p>
+              </div>
+            </div>
+          </div>
+       </section>
+       <!-- While -->
+       <section class="while-loop-section">
+        <div class="container">
+            <h1>While Loop</h1>
+        <div class="steps-container">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-description">
+              <h2>Condition Check</h2>
+              <p>Evaluate the specified condition before each iteration.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-description">
+              <h2>Code Execution</h2>
+              <p>Run the loop body if the condition is true.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-description">
+              <h2>Iteration</h2>
+              <p>Repeat until the condition becomes false.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
     <script src="./scripts/app.js"></script>
 </body>
 </html>

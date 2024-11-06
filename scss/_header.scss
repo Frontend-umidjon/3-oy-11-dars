@@ -1,0 +1,88 @@
+.header{
+    background-color: $bg-sy;
+
+}
+.navbar{
+    @include df;
+    padding: 16px 0;
+    &__logo{
+        @include dfc;
+        img{
+            width: 120px;
+        }
+    }
+    &__list{
+        @include df;
+        gap: 26px;
+        li{
+            &::after{
+                content: "";
+                display: block;
+                width: 0;
+                height: 2px;
+                background-color: $main-text-color;
+                transition: width 0.3s ease;
+            }
+            &:hover::after{
+                width: 100%;
+            }
+
+        }
+        a{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            color: $main-text-color;
+        }
+    }
+    &__link{
+        color: $main-text-color;
+        text-decoration: none;
+    }
+    &__burger{
+        cursor: pointer;
+        @include dfc;
+
+        i{
+            font-size: 24px;
+            color: $main-text-color;
+        }
+
+
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar{
+        &__list{
+            display: none;
+        }
+        &__burger{
+            display: block;
+        }
+    }
+    
+}
+@media (max-width: 480px) {
+    .navbar{
+        &__logo{
+            img{
+                width: 100px;
+            }
+        }
+
+        &__list{
+            display: none;
+        }
+
+        
+        &__burger{
+            display: block;
+        }
+
+
+    }
+    
+}
